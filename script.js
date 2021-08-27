@@ -5,6 +5,7 @@ function compute()
     var years = document.getElementById("years").value;
     var amount = principal * years * rate / 100;
     var year = new Date().getFullYear()+parseInt(years);
+    //Check for positive values
     if (amount <= 0) {
         alert("Enter a positive number");
         document.getElementById("principal").focus();
